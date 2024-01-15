@@ -227,7 +227,7 @@ fun PantallaFormUI(
         horizontalAlignment = Alignment.CenterHorizontally
     ){
         TextField(
-            label = { Text("latitud")},                // DECIA RECEPTOR
+            label = { Text("latitud")},
             value = formRecepcionVM.latitud.value.toString(),
             onValueChange = { newValue -> formRecepcionVM.latitud.value = newValue.toDoubleOrNull() ?: formRecepcionVM.latitud.value},
             modifier = Modifier
@@ -265,7 +265,6 @@ fun PantallaFormUI(
         }
         Spacer(Modifier.height(100.dp))
     }
-
 }
 
 @Composable
@@ -320,9 +319,6 @@ fun MapaOsmUI(latitud:Double, longitud:Double) {
         }
     )
 }
-
-
-
 
 
 
